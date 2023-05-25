@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Enables reading from stdin using a Scanner and
  * writing to stdout using print/println
  * 
- * @author 
+ * @author Tejpreet Bal
  */
 public class InteractiveCLI {
 

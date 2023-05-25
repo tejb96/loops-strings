@@ -1,0 +1,35 @@
+@startuml
+
+class NewtonSolver {
+  - N: double
+  - maxError: double
+  - guess: double
+  - iter: int
+  --
+  + NewtonSolver( N: double, maxError: double, guess: double)
+  + sqrt(): double
+  + getIterations(): double
+}
+
+class NewtonApp {
+  - cli: InteractiveCLI
+  --
+  + NewtonApp()
+  + run(): void
+  + main(args: String[]): void
+}
+
+class InteractiveCLI {
+  - reader: Scanner
+  --
+  + InteractiveCLI()
+  + getKeyboardInteger(): int
+  + getKeyboardDouble(): double
+  + prompt(s: String): void
+  + display(s: String): void
+}
+
+NewtonApp --> NewtonSolver : uses
+NewtonApp --> InteractiveCLI : uses
+
+@enduml
