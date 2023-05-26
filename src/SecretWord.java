@@ -43,13 +43,13 @@ public class SecretWord {
      */
 	public void replaceChars(String s1, String s2,  char ch){	
 		
-		StringBuilder sb = new StringBuilder(displayWord);		
-		for(int index=0; index <= secretWord.length()-1; index++) {
-			if(secretWord.charAt(index) == ch) {
-				sb.setCharAt(index, ch);
+		StringBuilder sb = new StringBuilder(s2);		
+		for(int index=0; index <= s1.length()-1; index++) { //for all characters in s1
+			if(s1.charAt(index) == ch) { // if given character ch is in s1
+				sb.setCharAt(index, ch); // replace * with ch
 			}
 		}
-		displayWord = sb.toString();
+		displayWord = sb.toString(); // assign to displayWord
 	}
 	
 	 /**
