@@ -3,7 +3,7 @@
  * Class representing command-line interface to compute 
  * the square root and returns the number of iterations it took
  * .
- * @author 
+ * @author Tejpreet Bal
  * @version 1.0
  * @Date May 24, 2023
  *
