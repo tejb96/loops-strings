@@ -38,7 +38,7 @@ public class NewtonSolver {
 		double err;
 		do {
 			sqrtCalc = ((N / guess) + guess) / 2;
-			err = guess - sqrtCalc;
+			err = Math.abs(guess - sqrtCalc);
 			guess = sqrtCalc;
 			iter++;
 		} while (err > maxError);
