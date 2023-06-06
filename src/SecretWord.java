@@ -53,12 +53,23 @@ public class SecretWord {
 	}
 	
 	 /**
-     * Retrieves the current displayed word.
-     * @return The displayed word
+     * Retrieves the current secret word.
+     * @return The secret word
      */
+	public String getSecretWord() {
+		return secretWord;
+	}
+	
+
+	 /**
+    * Retrieves the current displayed word.
+    * @return The displayed word
+    */
 	public String getDisplayedWord() {
 		return displayWord;
 	}
+	
+	
 	
 	/**
      * Checks for the guess character in the secret word and updates the displayed word accordingly.
